@@ -7,7 +7,7 @@ class Command(BaseCommand):
     help = 'Import data from a CSV file into a model'
 
     def handle(self, *args, **options):
-        csv_file_path = "/Users/macbookpro/DjangoProjects/SpaceGame/SpaceGame/gameLogics/csv/Commodities.csv"
+        csv_file_path = "/home/RajaAtif1225/SpaceGame/gameLogics/csv/Commodities.csv"
 
         with open(csv_file_path, mode='r') as file:
             reader = csv.reader(file)
